@@ -1,0 +1,6 @@
+{
+  "name": "Malia Portfolio",
+  "description": "An elegant, premium, full-stack portfolio and e-commerce portal for the independent music artist MALIA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
