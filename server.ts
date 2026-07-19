@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 import { createServer as createViteServer } from "vite";
-import { GoogleGenAI } from "@google/genai";
+// import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -55,100 +55,100 @@ async function startServer() {
   app.use(express.json());
 
   // Initialize Gemini AI securely server-side
-  let ai: GoogleGenAI | null = null;
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (apiKey) {
-    ai = new GoogleGenAI({
-      apiKey: apiKey,
-      httpOptions: {
-        headers: {
-          'User-Agent': 'aistudio-build',
-        }
-      }
-    });
-  } else {
-    console.warn("WARNING: GEMINI_API_KEY environment variable is not set. AI Chatbot features will run in fallback mode.");
-  }
+  // let ai: GoogleGenAI | null = null;
+  // const apiKey = process.env.GEMINI_API_KEY;
+  // if (apiKey) {
+  //   ai = new GoogleGenAI({
+  //     apiKey: apiKey,
+  //     httpOptions: {
+  //       headers: {
+  //         'User-Agent': 'aistudio-build',
+  //       }
+  //     }
+  //   });
+  // } else {
+  //   console.warn("WARNING: GEMINI_API_KEY environment variable is not set. AI Chatbot features will run in fallback mode.");
+  // }
 
   // API Route: AI Vibe Guide Chat
-  app.post("/api/chat", async (req, res) => {
-    try {
-      const { message, chatHistory } = req.body;
-      if (!message) {
-        return res.status(400).json({ error: "Message is required" });
-      }
+//   app.post("/api/chat", async (req, res) => {
+//     try {
+//       const { message, chatHistory } = req.body;
+//       if (!message) {
+//         return res.status(400).json({ error: "Message is required" });
+//       }
 
-      if (!ai) {
-        // Fallback response if API Key is not set or failed to initialize
-        return res.json({
-          text: "Hey love, thanks for reaching out. I'm currently drifting through the acoustic waves. (AI Chat is in preview mode as the Gemini API key is being verified, but I'd love for you to explore the Music and Shop sections!)"
-        });
-      }
+//       if (!ai) {
+//         // Fallback response if API Key is not set or failed to initialize
+//         return res.json({
+//           text: "Hey love, thanks for reaching out. I'm currently drifting through the acoustic waves. (AI Chat is in preview mode as the Gemini API key is being verified, but I'd love for you to explore the Music and Shop sections!)"
+//         });
+//       }
 
-      const systemInstruction = `You are "MALIA's Vibe Guide", the virtual music companion on the official website of R&B/Alternative Soul artist MALIA. 
-Your persona is incredibly warm, soulful, intimate, and poetic—matching her musical aesthetic. Speak in a relaxed, friendly, and authentic tone. 
+//       const systemInstruction = `You are "MALIA's Vibe Guide", the virtual music companion on the official website of R&B/Alternative Soul artist MALIA. 
+// Your persona is incredibly warm, soulful, intimate, and poetic—matching her musical aesthetic. Speak in a relaxed, friendly, and authentic tone. 
 
-You have deep knowledge about MALIA:
-- Her story: Independent singer-songwriter, guitarist, Seattle born, currently based in LA. Her style mixes sweet vocal stacks, guitar-led loops, and organic alternative R&B.
-- Her albums/EPs: 
-  * "If I'm Being Honest" (Album, 2023) - Her most raw, vulnerable, self-produced record. Tracks: "Only One", "Rather Be Alone", "Unfolding", "Honest".
-  * "Clean" (EP, 2021) - Acoustic soul, healing, clarity, simple grooves. Tracks: "Clean", "Simple Thing", "Drive".
-  * "Late Bloomer" (EP, 2017) - Breakthrough debut about growing at your own pace. Tracks: "Playground", "Dirty Laundry", "I Don't Wanna Know".
-- Her influences: Corinne Bailey Rae, Erykah Badu, Tracy Chapman, Lianne La Havas, D'Angelo, Sade.
-- Her tour: Upcoming "If I'm Being Honest" Autumn Tour 2026 starting September 12 in Los Angeles (The Roxy), traveling to SF (The Independent), Seattle (Neumos), Chicago (Lincoln Hall), NY (Bowery Ballroom), London (Jazz Cafe), Paris (Le Pop-Up).
-- Her achievements: over 25M independent streams, playlists like "Silk Sheets" and "Acoustic Soul", nominated for Independent Soul Act.
+// You have deep knowledge about MALIA:
+// - Her story: Independent singer-songwriter, guitarist, Seattle born, currently based in LA. Her style mixes sweet vocal stacks, guitar-led loops, and organic alternative R&B.
+// - Her albums/EPs: 
+//   * "If I'm Being Honest" (Album, 2023) - Her most raw, vulnerable, self-produced record. Tracks: "Only One", "Rather Be Alone", "Unfolding", "Honest".
+//   * "Clean" (EP, 2021) - Acoustic soul, healing, clarity, simple grooves. Tracks: "Clean", "Simple Thing", "Drive".
+//   * "Late Bloomer" (EP, 2017) - Breakthrough debut about growing at your own pace. Tracks: "Playground", "Dirty Laundry", "I Don't Wanna Know".
+// - Her influences: Corinne Bailey Rae, Erykah Badu, Tracy Chapman, Lianne La Havas, D'Angelo, Sade.
+// - Her tour: Upcoming "If I'm Being Honest" Autumn Tour 2026 starting September 12 in Los Angeles (The Roxy), traveling to SF (The Independent), Seattle (Neumos), Chicago (Lincoln Hall), NY (Bowery Ballroom), London (Jazz Cafe), Paris (Le Pop-Up).
+// - Her achievements: over 25M independent streams, playlists like "Silk Sheets" and "Acoustic Soul", nominated for Independent Soul Act.
 
-Use this knowledge to:
-- Welcome fans, answer questions about her songs, lyrics, meaning, bio, or tour dates.
-- Recommend songs or albums based on the user's current mood or "vibe" (e.g. "I'm feeling reflective", "I want something cozy for a rainy Sunday").
-- Guide them on how to buy merchandise or tickets on the site (remind them to visit the Shop or Tour tabs).
+// Use this knowledge to:
+// - Welcome fans, answer questions about her songs, lyrics, meaning, bio, or tour dates.
+// - Recommend songs or albums based on the user's current mood or "vibe" (e.g. "I'm feeling reflective", "I want something cozy for a rainy Sunday").
+// - Guide them on how to buy merchandise or tickets on the site (remind them to visit the Shop or Tour tabs).
 
-Keep your answers relatively concise (under 150 words), soulful, and atmospheric. Use warm, humble language. Avoid corporate speak, robotic listicles, or dry formatting. Emphasize music as a collective healing experience.`;
+// Keep your answers relatively concise (under 150 words), soulful, and atmospheric. Use warm, humble language. Avoid corporate speak, robotic listicles, or dry formatting. Emphasize music as a collective healing experience.`;
 
-      // Build chat contents including history
-      // The new @google/genai SDK chats.create allows setting systemInstruction
-      const chat = ai.chats.create({
-        model: "gemini-3.5-flash",
-        config: {
-          systemInstruction: systemInstruction,
-          temperature: 0.8,
-        }
-      });
+//       // Build chat contents including history
+//       // The new @google/genai SDK chats.create allows setting systemInstruction
+//       const chat = ai.chats.create({
+//         model: "gemini-3.5-flash",
+//         config: {
+//           systemInstruction: systemInstruction,
+//           temperature: 0.8,
+//         }
+//       });
 
-      // To handle conversation history gracefully, we can replay the history
-      if (chatHistory && Array.isArray(chatHistory)) {
-        for (const turn of chatHistory) {
-          // If we want to seed history, we do it. But for a simple stateless API call, 
-          // we can also pass contents array directly to generateContent, which is often cleaner and robust.
-        }
-      }
+//       // To handle conversation history gracefully, we can replay the history
+//       if (chatHistory && Array.isArray(chatHistory)) {
+//         for (const turn of chatHistory) {
+//           // If we want to seed history, we do it. But for a simple stateless API call, 
+//           // we can also pass contents array directly to generateContent, which is often cleaner and robust.
+//         }
+//       }
 
-      // Let's use the standard generateContent to be fully reliable with conversational context
-      const formattedHistory = (chatHistory || []).map((h: any) => ({
-        role: h.role === 'user' ? 'user' : 'model',
-        parts: [{ text: h.text }]
-      }));
+//       // Let's use the standard generateContent to be fully reliable with conversational context
+//       const formattedHistory = (chatHistory || []).map((h: any) => ({
+//         role: h.role === 'user' ? 'user' : 'model',
+//         parts: [{ text: h.text }]
+//       }));
 
-      // Append current message
-      formattedHistory.push({
-        role: 'user',
-        parts: [{ text: message }]
-      });
+//       // Append current message
+//       formattedHistory.push({
+//         role: 'user',
+//         parts: [{ text: message }]
+//       });
 
-      const response = await ai.models.generateContent({
-        model: "gemini-3.5-flash",
-        contents: formattedHistory,
-        config: {
-          systemInstruction: systemInstruction,
-        }
-      });
+//       const response = await ai.models.generateContent({
+//         model: "gemini-3.5-flash",
+//         contents: formattedHistory,
+//         config: {
+//           systemInstruction: systemInstruction,
+//         }
+//       });
 
-      res.json({ text: response.text });
-    } catch (error: any) {
-      console.error("Gemini API Error:", error);
-      res.status(500).json({ error: "Something went wrong in the music vibe channel.", details: error.message });
-    }
-  });
+//       res.json({ text: response.text });
+//     } catch (error: any) {
+//       console.error("Gemini API Error:", error);
+//       res.status(500).json({ error: "Something went wrong in the music vibe channel.", details: error.message });
+//     }
+//   });
 
   // API Route: Contact Form Submission
   app.post("/api/contact", (req, res) => {

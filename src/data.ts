@@ -5,180 +5,409 @@ export const INITIAL_ALBUMS: Album[] = [
     id: 'if-im-being-honest',
     title: "If I'm Being Honest",
     type: 'album',
-    releaseDate: '2023-09-15',
-    coverUrl: '/src/assets/images/malia_vinyl_mockup_1784336212268.jpg', // Using generated vinyl
+    releaseDate: '2026-07-03',
+    coverUrl: '/src/assets/images/If-Im-Being-Honest.jpg', // Using generated vinyl
     description: "An intimate, raw exploration of vulnerability, self-discovery, and relational truth. Rooted in warm guitar riffs, sweet vocal stacks, and rich organic R&B instrumentation, this record represents MALIA's most honest creative chapter yet.",
-    spotifyUrl: 'https://open.spotify.com/album/4Os9KMlONkZVJfzjLJ9X5u?si=5hauIvoJQ0G6LkelJr7-Pg',
+    spotifyUrl: 'https://open.spotify.com/album/2sCfkr7RWvA1It0b2lckAW',
     appleMusicUrl: 'https://music.apple.com/us/album/if-im-being-honest/1698243110',
     isLatest: true,
     tracks: [
       {
         id: 'iibh-1',
-        title: 'Only One',
-        duration: '3:14',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+        title: 'Not a Love Song',
+        duration: '3:04',
+        previewUrl: '',
         lyrics: "Sitting in my room, staring at the ceiling...\nYou became the only one, the one that got me feeling...\nEverything I buried deep, everything I hide,\nNow I'm standing open wide.\n\n[Chorus]\n'Cause you're the only one,\nYeah, you're the only one,\nThat makes me feel alright,\nIn the middle of the night..."
       },
       {
         id: 'iibh-2',
-        title: 'Rather Be Alone',
-        duration: '3:45',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+        title: 'Masquerade',
+        duration: '3:07',
+        previewUrl: '',
         lyrics: "Rather be alone than in a crowded room with you...\nRather take my time and do the things I want to do...\nI won't sacrifice my peace to keep you in my space,\nI am moving on and stepping out of this embrace.\n\n[Chorus]\nI'd rather be alone, alone,\nWalking on my own, my own,\nBuilding up my home, my home,\nYeah, I'm better on my own..."
       },
       {
         id: 'iibh-3',
-        title: 'Unfolding',
-        duration: '2:58',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
+        title: 'Touch',
+        duration: '3:39',
+        previewUrl: '',
         lyrics: "Petals of a rose falling to the floor,\nI don't have to keep my guard up anymore.\nWatch me unfolding, piece by piece,\nFinding my healing, finding my release."
       },
       {
         id: 'iibh-4',
-        title: 'Honest',
-        duration: '3:22',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3',
+        title: 'Getaway Driver',
+        duration: '3:19',
+        previewUrl: '',
+        lyrics: "If I'm being honest, I was scared of the fall,\nIf I'm being honest, I almost gave it all.\nBut the truth will set you free, that's what they say,\nNow I'm finally walking in my own light today."
+      },
+      {
+        id: 'iibh-5',
+        title: 'Shallow',
+        duration: '2:40',
+        previewUrl: '',
+        lyrics: "If I'm being honest, I was scared of the fall,\nIf I'm being honest, I almost gave it all.\nBut the truth will set you free, that's what they say,\nNow I'm finally walking in my own light today."
+      },
+      {
+        id: 'iibh-6',
+        title: 'Party',
+        duration: '2:58',
+        previewUrl: '',
+        lyrics: "If I'm being honest, I was scared of the fall,\nIf I'm being honest, I almost gave it all.\nBut the truth will set you free, that's what they say,\nNow I'm finally walking in my own light today."
+      },
+      {
+        id: 'iibh-7',
+        title: 'Masquerade',
+        duration: '3:00',
+        previewUrl: '',
         lyrics: "If I'm being honest, I was scared of the fall,\nIf I'm being honest, I almost gave it all.\nBut the truth will set you free, that's what they say,\nNow I'm finally walking in my own light today."
       }
     ]
   },
   {
-    id: 'whats-not-spoken-ep',
-    title: "What's Not Spoken",
-    type: 'ep',
-    releaseDate: '2022-04-29',
-    coverUrl: '/src/assets/images/malia_whats_not_spoken_cover_1784340027877.jpg',
+    id: 'back-in-my-body',
+    title: "Back In My Body",
+    type: 'album',
+    releaseDate: '2024-08-15',
+    coverUrl: '/src/assets/images/back-in-my-body.jpg',
     description: "A profoundly vulnerable and raw EP exploring unspoken truths, hidden desires, and quiet revelations. Features delicate acoustic production, rich vocal layers, and hauntingly beautiful melodies.",
-    spotifyUrl: 'https://open.spotify.com/album/7soaYNGuM9PA3fKw6BxBGS?si=QbMpPlBETTyXWq2VKjfxFg',
+    spotifyUrl: 'https://open.spotify.com/album/4Os9KMlONkZVJfzjLJ9X5u',
     appleMusicUrl: 'https://music.apple.com/us/album/whats-not-spoken-ep/1614040989',
     tracks: [
       {
-        id: 'wns-1',
-        title: 'More Than Words',
-        duration: '3:15',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3',
+        id: 'bimb-1',
+        title: 'Genesis',
+        duration: '3:01',
+        previewUrl: '',
         lyrics: "It's in the way you look at me...\nSomething that science can't explain...\nWe don't need a guarantee,\nBut we are more than words, more than words."
       },
       {
-        id: 'wns-2',
-        title: 'Rest of My Life',
-        duration: '3:42',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3',
+        id: 'bimb-2',
+        title: 'Do it Out of Love',
+        duration: '3:34',
+        previewUrl: '',
         lyrics: "Could this be the final chapter?\nCould this be the end of the line?\nOr are you the one I am after,\nFor the rest of my life..."
       },
       {
-        id: 'wns-3',
-        title: 'Currency',
-        duration: '3:08',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3',
+        id: 'bimb-3',
+        title: 'Cruise Control',
+        duration: '3:30',
+        previewUrl: '',
         lyrics: "Love is the only currency we need,\nIn a world filled with selfishness and greed.\nSpend your time, spend your soul with me..."
       },
       {
-        id: 'wns-4',
-        title: 'Simply',
-        duration: '2:52',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3',
+        id: 'bimb-4',
+        title: 'Everything I Am',
+        duration: '4:01',
+        previewUrl: '',
+        lyrics: "I love you simply, with no strings attached,\nIn a universe where we are perfectly matched.\nJust you and me, simply as we are..."
+      },
+      {
+        id: 'bimb-5',
+        title: 'Minding My Own',
+        duration: '3:05',
+        previewUrl: '',
+        lyrics: "I love you simply, with no strings attached,\nIn a universe where we are perfectly matched.\nJust you and me, simply as we are..."
+      },
+      {
+        id: 'bimb-6',
+        title: 'Deep Green',
+        duration: '2:10',
+        previewUrl: '',
+        lyrics: "I love you simply, with no strings attached,\nIn a universe where we are perfectly matched.\nJust you and me, simply as we are..."
+      },
+      {
+        id: 'bimb-7',
+        title: 'Feels So Good',
+        duration: '3:18',
+        previewUrl: '',
+        lyrics: "I love you simply, with no strings attached,\nIn a universe where we are perfectly matched.\nJust you and me, simply as we are..."
+      },
+      {
+        id: 'bimb-8',
+        title: 'Bad Manners',
+        duration: '3:33',
+        previewUrl: '',
+        lyrics: "I love you simply, with no strings attached,\nIn a universe where we are perfectly matched.\nJust you and me, simply as we are..."
+      },
+      {
+        id: 'bimb-9',
+        title: 'Jasmine in Bloom',
+        duration: '4:05',
+        previewUrl: '',
+        lyrics: "I love you simply, with no strings attached,\nIn a universe where we are perfectly matched.\nJust you and me, simply as we are..."
+      },
+      {
+        id: 'bimb-10',
+        title: 'Oxytocin',
+        duration: '2:27',
+        previewUrl: '',
+        lyrics: "I love you simply, with no strings attached,\nIn a universe where we are perfectly matched.\nJust you and me, simply as we are..."
+      },
+      {
+        id: 'bimb-11',
+        title: 'Back in My Body',
+        duration: '3:42',
+        previewUrl: '',
         lyrics: "I love you simply, with no strings attached,\nIn a universe where we are perfectly matched.\nJust you and me, simply as we are..."
       }
     ]
   },
   {
-    id: 'clean-ep',
-    title: 'Clean',
-    type: 'ep',
-    releaseDate: '2021-06-11',
-    coverUrl: '/src/assets/images/malia_clean_cover_1784340016912.jpg',
+    id: 'whats-after-i-love-you',
+    title: "What's After I Love You",
+    type: 'album',
+    releaseDate: '2022-03-04',
+    coverUrl: '/src/assets/images/whats-after-i-love-you.jpg',
     description: "A gorgeous collection of acoustic-infused alternative soul. Crafted during a period of introspection, 'Clean' represents a washing away of old habits and an embrace of spiritual and emotional clarity.",
-    spotifyUrl: 'https://open.spotify.com/album/3qdX8WDC7VXsMle6FTC7q6?si=f63MSa5cTr-k76tyuP1SzA',
+    spotifyUrl: 'https://open.spotify.com/album/3qdX8WDC7VXsMle6FTC7q6',
     appleMusicUrl: 'https://music.apple.com/us/album/clean-ep/1567284450',
     tracks: [
       {
-        id: 'clean-1',
-        title: 'Clean',
-        duration: '3:02',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3',
-        lyrics: "Washed my hands of the expectation...\nFound myself in a quiet meditation...\nNow my heart is clean, yeah it's clean."
+        id: 'waily-1',
+        title: 'Falling Fast (Interlude)',
+        duration: '0:33',
+        previewUrl: '',
+        lyrics: "Washed my hands of the expectation...\nFound myself in a quiet meditation...\nNow my heart is waily, yeah it's waily."
       },
       {
-        id: 'clean-2',
-        title: 'Simple Thing',
-        duration: '3:24',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3',
+        id: 'waily-2',
+        title: 'More Than Love',
+        duration: '3:32',
+        previewUrl: '',
         lyrics: "Love is such a simple thing, why we make it hard?\nBuilding up these giant walls, always on our guard..."
       },
       {
-        id: 'clean-3',
-        title: 'Drive',
-        duration: '2:48',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3',
+        id: 'waily-3',
+        title: 'Currency',
+        duration: '3:11',
+        previewUrl: '',
+        lyrics: "Late night, cruise down the highway,\nListening to the radio play,\nLet's just drive..."
+      },
+      {
+        id: 'waily-4',
+        title: 'Drive Me To Think (Interlude 2)',
+        duration: '0:39',
+        previewUrl: '',
+        lyrics: "Late night, cruise down the highway,\nListening to the radio play,\nLet's just drive..."
+      },
+      {
+        id: 'waily-5',
+        title: 'Hung Up',
+        duration: '2:49',
+        previewUrl: '',
+        lyrics: "Late night, cruise down the highway,\nListening to the radio play,\nLet's just drive..."
+      },
+      {
+        id: 'waily-6',
+        title: 'Only One',
+        duration: '3:38',
+        previewUrl: '',
+        lyrics: "Late night, cruise down the highway,\nListening to the radio play,\nLet's just drive..."
+      },
+      {
+        id: 'waily-7',
+        title: 'Everything and Nothing (Interlude 3)',
+        duration: '0:32',
+        previewUrl: '',
+        lyrics: "Late night, cruise down the highway,\nListening to the radio play,\nLet's just drive..."
+      },
+      {
+        id: 'waily-8',
+        title: 'Undone',
+        duration: '2:49',
+        previewUrl: '',
         lyrics: "Late night, cruise down the highway,\nListening to the radio play,\nLet's just drive..."
       }
     ]
   },
   {
     id: 'ripe-ep',
-    title: 'Ripe',
-    type: 'ep',
-    releaseDate: '2020-07-17',
-    coverUrl: '/src/assets/images/malia_ripe_cover_1784340002602.jpg',
+    title: 'Unpolished',
+    type: 'album',
+    releaseDate: '2021-04-06',
+    coverUrl: '/src/assets/images/unpolished.jpg',
     description: "A lush, sensuous R&B exploration of emotional growth and self-discovery. Filled with organic guitar textures, rich warm basslines, and deeply intimate vocal performances.",
-    spotifyUrl: 'https://open.spotify.com/album/4xcloNEXKxdyaVn5jtL5GJ?si=PqR-dMNCRR6gwRTs7g4PUA',
+    spotifyUrl: 'https://open.spotify.com/album/4EfYCKhe9BfBuZhy3M5MfV',
     appleMusicUrl: 'https://music.apple.com/us/album/ripe-ep/1519782582',
     tracks: [
       {
-        id: 'ripe-1',
-        title: 'Pleasure',
-        duration: '3:24',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3',
+        id: 'unp-1',
+        title: 'Part Time Girl',
+        duration: '3:07',
+        previewUrl: '',
         lyrics: "Finding pleasure in the simple things you do,\nLost in the rhythm, floating in the blue...\nWe don't need to rush this, take our sweet sweet time."
       },
       {
-        id: 'ripe-2',
-        title: 'Free Ones',
-        duration: '3:10',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3',
+        id: 'unp-2',
+        title: 'Deep Blue',
+        duration: '3:01',
+        previewUrl: '',
         lyrics: "We are the free ones, running in the wild,\nEvery single memory of a happy child...\nNo chains can hold us, we are born to fly."
       },
       {
-        id: 'ripe-3',
-        title: 'Ripe',
+        id: 'unp-3',
+        title: 'Coast 2 Coast',
+        duration: '3:52',
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
+      },
+      {
+        id: 'unp-4',
+        title: 'Closer',
+        duration: '2:32',
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
+      },
+      {
+        id: 'unp-5',
+        title: 'Lucid Dream',
+        duration: '3:07',
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
+      },
+      {
+        id: 'unp-6',
+        title: 'Better Together',
         duration: '2:58',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-17.mp3',
-        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are ripe, yeah we are ripe."
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
+      },
+      {
+        id: 'unp-7',
+        title: 'Future Love',
+        duration: '3:48',
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
+      },
+      {
+        id: 'unp-8',
+        title: 'Borrowed Time',
+        duration: '3:09',
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
+      },
+      {
+        id: 'unp-9',
+        title: 'Here We Are',
+        duration: '2:47',
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
+      },
+      {
+        id: 'unp-10',
+        title: 'Ammunition',
+        duration: '2:59',
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
+      },
+      {
+        id: 'unp-11',
+        title: 'Misfit',
+        duration: '3:09',
+        previewUrl: '',
+        lyrics: "Ready for the picking, sweet upon the vine,\nEverything is healing, everything is fine.\nWe are unp, yeah we are unp."
       }
     ]
   },
   {
     id: 'late-bloomer-ep',
     title: 'Late Bloomer',
-    type: 'ep',
-    releaseDate: '2017-10-20',
-    coverUrl: '/src/assets/images/malia_late_bloomer_cover_1784339989240.jpg',
+    type: 'album',
+    releaseDate: '2017-12-19',
+    coverUrl: '/src/assets/images/late-bloomer.jpg',
     description: "MALIA's breakthrough debut EP. A soul-stirring, sun-drenched R&B project exploring early twenties growing pains, self-acceptance, and the beauty of blooming on your own timeline.",
-    spotifyUrl: 'https://open.spotify.com/album/2sCfkr7RWvA1It0b2lckAW?si=eQYPWNeASgC2JF0-f58Ekg',
+    spotifyUrl: 'https://open.spotify.com/album/4xcloNEXKxdyaVn5jtL5GJ',
     appleMusicUrl: 'https://music.apple.com/us/album/late-bloomer-ep/1294821034',
     tracks: [
       {
         id: 'lb-1',
-        title: 'Playground',
-        duration: '3:30',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3',
+        title: 'Simple Things',
+        duration: '3:28',
+        previewUrl: '',
         lyrics: "Meet me at the playground where we used to run...\nUnderneath the golden light, soaking up the sun...\nNo worries in our heads, just laughing all day long."
       },
       {
         id: 'lb-2',
-        title: 'Dirty Laundry',
-        duration: '3:12',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+        title: 'Sleepin',
+        duration: '3:27',
+        previewUrl: '',
         lyrics: "Airing our dirty laundry out on the screen,\nThings are never simple, never quite what they seem...\nBut we will wash it away, wash it clean."
       },
       {
         id: 'lb-3',
-        title: "I Don't Wanna Know",
-        duration: '3:40',
-        previewUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3',
+        title: "Naked",
+        duration: '2:47',
+        previewUrl: '',
         lyrics: "I don't wanna know who you're talking to late at night,\nI don't wanna know if you think that she is alright...\nJust let me be in my peace."
-      }
+      },
+      {
+        id: 'lb-4',
+        title: "Helpless",
+        duration: '1:14',
+        previewUrl: '',
+        lyrics: "I don't wanna know who you're talking to late at night,\nI don't wanna know if you think that she is alright...\nJust let me be in my peace."
+      },
+      {
+        id: 'lb-5',
+        title: "Small Talk",
+        duration: '3:02',
+        previewUrl: '',
+        lyrics: "I don't wanna know who you're talking to late at night,\nI don't wanna know if you think that she is alright...\nJust let me be in my peace."
+      },
+      {
+        id: 'lb-6',
+        title: "Way of The World",
+        duration: '4:33',
+        previewUrl: '',
+        lyrics: "I don't wanna know who you're talking to late at night,\nI don't wanna know if you think that she is alright...\nJust let me be in my peace."
+      },
+      {
+        id: 'lb-7',
+        title: "Dirty Lauundry",
+        duration: '3:07',
+        previewUrl: '',
+        lyrics: "I don't wanna know who you're talking to late at night,\nI don't wanna know if you think that she is alright...\nJust let me be in my peace."
+      },
+    ]
+  },
+  {
+    id: 'all-that-i-need',
+    title: 'All That I Need',
+    type: 'ep',
+    releaseDate: '2025-09-21',
+    coverUrl: '/src/assets/images/all-that-i-need.jpg',
+    description: "MALIA's breakthrough debut EP. A soul-stirring, sun-drenched R&B project exploring early twenties growing pains, self-acceptance, and the beauty of blooming on your own timeline.",
+    spotifyUrl: 'https://open.spotify.com/album/5IXNqq1zvFMQxCQME0BjDF',
+    appleMusicUrl: 'https://music.apple.com/us/album/all-that-i-need/1294821034',
+    tracks: [
+      {
+        id: 'atin-1',
+        title: 'Vacation Home',
+        duration: '2:44',
+        previewUrl: '',
+        lyrics: "Meet me at the playground where we used to run...\nUnderneath the golden light, soaking up the sun...\nNo worries in our heads, just laughing all day long."
+      },
+      {
+        id: 'atin-2',
+        title: 'All That I Need',
+        duration: '3:27',
+        previewUrl: '',
+        lyrics: "Airing our dirty laundry out on the screen,\nThings are never simple, never quite what they seem...\nBut we will wash it away, wash it clean."
+      },
+      {
+        id: 'atin-3',
+        title: "Eatin' Good",
+        duration: '2:47',
+        previewUrl: '',
+        lyrics: "I don't wanna know who you're talking to late at night,\nI don't wanna know if you think that she is alright...\nJust let me be in my peace."
+      },
+      {
+        id: 'atin-4',
+        title: "We Are",
+        duration: '1:14',
+        previewUrl: '',
+        lyrics: "I don't wanna know who you're talking to late at night,\nI don't wanna know if you think that she is alright...\nJust let me be in my peace."
+      },
     ]
   }
 ];
@@ -462,7 +691,7 @@ export const BIOGRAPHY_DATA: BioData = {
       description: 'Nominated for Independent Soul Act, announcing the highly anticipated Autumn 2026 World Tour.'
     }
   ],
-  portraitUrl: '/src/assets/images/malia_hero_banner_1784336198067.jpg' // Portrait using generated image
+  portraitUrl: '/src/assets/images/hero-banner.jpg' // Portrait using generated image
 };
 export const SOCIAL_LINKS = {
   spotify: 'https://open.spotify.com/artist/5o6oaYrumOkkzsOmwZXJv6',

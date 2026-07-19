@@ -3,12 +3,12 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Music from './components/Music';
 import Gallery from './components/Gallery';
-import Shop from './components/Shop';
+// import Shop from './components/Shop';
 import Tours from './components/Tours';
 import About from './components/About';
 import Contact from './components/Contact';
 import AICompanion from './components/AICompanion';
-import AudioPlayer from './components/AudioPlayer';
+// import AudioPlayer from './components/AudioPlayer';
 import Admin from './components/Admin';
 
 import {
@@ -233,17 +233,17 @@ export default function App() {
         );
       case 'gallery':
         return <Gallery items={GALLERY_ITEMS} />;
-      case 'shop':
-        return (
-          <Shop
-            products={products}
-            cart={cart}
-            onAddToCart={handleAddToCart}
-            onUpdateCartQty={handleUpdateCartQty}
-            onRemoveFromCart={handleRemoveFromCart}
-            onClearCart={handleClearCart}
-          />
-        );
+      // case 'shop':
+      //   return (
+      //     <Shop
+      //       products={products}
+      //       cart={cart}
+      //       onAddToCart={handleAddToCart}
+      //       onUpdateCartQty={handleUpdateCartQty}
+      //       onRemoveFromCart={handleRemoveFromCart}
+      //       onClearCart={handleClearCart}
+      //     />
+      //   );
       case 'tour':
         return <Tours tourDates={tourDates} />;
       case 'about':
@@ -355,14 +355,14 @@ export default function App() {
       </footer>
 
       {/* Persistent Floating Audio Player */}
-      <AudioPlayer
+      {/* <AudioPlayer
         currentSong={currentSong}
         currentAlbum={currentAlbum}
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         onNext={handleNextTrack}
         onPrevious={handlePreviousTrack}
-      />
+      /> */}
 
       {/* AI Companion Slide Panel */}
       <AICompanion
